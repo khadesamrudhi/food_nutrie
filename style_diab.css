@@ -1,0 +1,69 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    background:white;
+    font-size: 24px;
+    padding: 25px;
+}
+.parallarx{
+    background: url('https://www1.racgp.org.au/getattachment/ec2f70c7-8474-4446-a5f1-1739f03e66d8/HbA1c-testing-for-type-2-diabetes-in-general-pract.aspx' ) center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+
+}
+body{
+    background-color:aliceblue;
+    line-height: 2rem;
+}
+h1{
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+}
+h3{
+    line-height: 2.5rem;
+}
+h4{
+    left: 2.5rem;
+    font-size: 17px;
+}
+.container2{
+    max-width: 960px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    font-size: 24px;
+    padding: 25px;
+}
+.parallax2{
+    background: url('https://ssl.adam.com/graphics/multimedia/en/23526/23526ed.jpg' ) center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+}
+.parallax3{
+    background: url('https://www.news-medical.net/images/news/ImageForNews_712505_16515844163432427.jpg' ) center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+}
+.parallax4{
+    background: url('http://cornerstone-primary-care.com/wp-content/uploads/2020/09/prevention.jpg' ) center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+}
+p{
+    line-height: 2rem;
+    font-size: 18px;
+}
+table{
+    width: 100%;
+}
+table ,td ,th{
+    border: 1px solid;
+    border-collapse: collapse;
+    line-height: 2rem;
+}

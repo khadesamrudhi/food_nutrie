@@ -1,0 +1,44 @@
+.parallax1{
+    background: url("https://media.istockphoto.com/id/1156928011/photo/heart-attack-heart-attack-conceptual-artwork-3d-illustration.jpg?b=1&s=170667a&w=0&k=20&c=7_eNb_D5woFYhnvWcSrEfrdHn1Jdhzh5N0oY02XEUSI=");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 520px;
+
+}
+body{
+    background-color: aliceblue;
+}
+.parallax2{
+    background: url("https://www.templehealth.org/sites/default/files/inline-images/heart-attack-symptoms-men-vs-women.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 550px;
+}
+.sympton-sol{
+    line-height: 2rem;
+}
+.table1{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+
+
+h2{
+    text-align: center;
+    line-height: 2rem;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+}
+table ,td ,th{
+    border: 1px solid;
+    border-collapse: collapse;
+    line-height: 2rem;
+}
+hr{
+    border: 10px solid green;
+  border-radius: 5px;
+}

@@ -1,0 +1,42 @@
+body{
+    line-height: 2rem;
+}
+h1{
+    text-align: center;
+    line-height: 2rem;
+}
+h3{
+    text-align: center;
+    color: brown;
+    line-height: 2rem;
+}
+p{
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+
+.parallax1{
+    background-image: url('https://c1.wallpaperflare.com/preview/839/851/731/pregnant-pregnant-woman-m-mother.jpg');
+    opacity:100%;
+    background-size: cover;
+    height: 600px;
+}
+.parallax2{
+    background: url('https://apollohealthlib.blob.core.windows.net/health-library/2022/01/Pregnancy-Diet.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 550px;
+}
+table{
+    width: 100%;
+}
+table ,td ,th{
+    border: 1px solid;
+    border-collapse: collapse;
+    line-height: 2rem;
+}
+p{
+    line-height: 2rem;
+    font-size: 18px;
+}

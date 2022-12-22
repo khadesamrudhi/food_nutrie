@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <!-- required meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- links -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style1.css" rel="stylesheet">
+    <link href="https://cdn1.vectorstock.com/i/1000x1000/29/20/healthy-nutrition-logo-design-template-vector-20852920.jpg" rel="icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <title>Food Nutrie</title>
+</head>
+<body >
+<div >
+    
+    <div class="offcial-web-banner" >
+        <div class="container" >
+            <!-- <img src="https://cdn1.vectorstock.com/i/1000x1000/29/20/healthy-nutrition-logo-design-template-vector-20852920.jpg" > -->
+            <a>An offical website for you and me to connect.</a>
+        </div>
+        <div class="offcial-web_message" >
+            <a>Food Nutrie.</a>
+        </div>
+
+    </div>
+</div>
+    
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <!-- <a class="navbar-brand" href="#" style="color: blue;">Navbar</a> -->
+        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="login_singup.html" >login/signUp</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:beige;">Health Cart</a> 
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="diabeties.html" target="_blank">Diabetes</a>
+                        <a class="dropdown-item" href="heart.html" target="_blank">Heart Attack </a>
+                        <a class="dropdown-item" href="labour_women.html" target="_blank"> Labour Women</a>
+                                    
+                    </div>
+                    
+                  </div>
+            </li>
+            <li class="nav-item">
+            
+                <a class="nav-link" href="spinwheel.html" style="color:beige; line-height: 5rm;">Spinwheel </a>
+            </li>
+            
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="slideshow-container" style="display: flexbox;">
+
+        <div class="mySlides fade" >
+          <div class="numbertext">1 / 3</div>
+          <img src="https://img.freepik.com/free-vector/fitness-concept-illustration_1284-61329.jpg?w=2000" style="width:100%">
+          <br>
+          <br><br>
+          <div class="text" style="color:indigo;">Whole in a diet </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/pregnancy/pregnantwomanholdsbellythumb.ashx" style="width:100%">
+          <br><br><br>
+          <div class="text" style="color:indigo ;">Need right thing.</div>
+
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://images.hindustantimes.com/img/2022/11/18/1600x900/heart-gbdbf4e304_1920_1668760603887_1668760705608_1668760705608.jpg" style="width:100%">
+          <br><br><br>
+          <div class="text" style="color:indigo;">Lets work on it</div>
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    
+        
+        
+<hr>
+<div>
+</div>  
+
+<div>
+    <div class="prallax0" ></div>
+    
+    <h1 style="text-align:center; ">
+        FOOD NUTRIE
+    </h1>
+    
+    <p style="color:rgb(77, 74, 74) ; font-family: Georgia, 'Times New Roman', Times, serif;">People look at food labels for a variety of reasons. 
+        But whatever the reason, many consumers would like to know how to use this information more effectively and easily. 
+    The following label-reading skills are intended to make it easier for you to use the Nutrition Facts labels to make quick, 
+    informed food decisions to help you choose a healthy diet.</p>
+    <br>
+    <br>
+    <p style="color:rgb(77, 74, 74) ;font-family: Georgia, 'Times New Roman', Times, serif;">
+        When looking at the Nutrition Facts label, first take a look at the number of servings in the 
+        package (servings per container) and the serving size. Serving sizes are standardized to make 
+        it easier to compare similar foods; they are provided in familiar units, such as cups or pieces, 
+        followed by the metric amount, e.g., the number of grams (g). The serving size reflects the amount that people 
+        typically eat or drink. It is not a recommendation of how much you should eat or drink.
+        It's important to realize that all the nutrient amounts shown on the label, including the number
+        of calories, refer to the size of the serving. Pay attention to the serving size, especially how many 
+        servings there are in the food package. For example, you might ask yourself if you are consuming ½ serving, 1 
+        serving, or more. In the sample label, one serving of lasagna equals 1 cup. If you ate two cups, you would be consuming two servings. 
+        That is two times the calories and nutrients shown in the sample label, so you would need to double the nutrient and calorie amounts, 
+        as well as the %DVs, to see what you are getting in two servings.
+    </p>
+    
+</div>
+<hr>
+<br><br>
+
+<!-- animation -->
+
+<div class="container h-50 my-5" data-aos="flip-left" >
+     <h1 style="line-height:2rem; ">Athlete fit</h1> 
+        <img src="https://w0.peakpx.com/wallpaper/658/530/HD-wallpaper-fitness-bodybuilding-training-slimming-slender-body-athlete-gym.jpg" width="1150" height="600" style="">
+        <p>Nutrition can help enhance athletic performance. An active lifestyle and exercise routine, along with eating well, is the best way to stay healthy. <b> Eating a good diet</b> can help provide the energy you need to finish a race, or just enjoy a casual sport or activity.</p>
+        <br>
+        <p>Your body needs a well-balanced meal or high calorie snack 3-4 hours prior to practice or competition to allow for proper digestion. For early morning events, try to eat at least 2 hours beforehand. Since many athletes have practice after school, make sure you bring a small snack to eat 30-60 minutes beforehand for an extra boost of energy.</p>
+</div>
+<div class="container h-50 my-5" data-aos="fade-right" >
+    <h1>Motherhood</h1>
+    <img src="https://media.istockphoto.com/id/1373099163/photo/hand-holding-newborn-babys-hand.jpg?b=1&s=170667a&w=0&k=20&c=oYdvDhIk1qo2slZdb0USFK7BqHQBcXotsgg2K_GKU6s=" width="1150" height="600" >
+    <p>A nutrient-dense diet full of complex carbs, fiber, healthy fats and protein, plus adequate hydration, <b>can help heal your body</b>. A healthy postpartum eating plan is the way to go to stave off bone loss, replenish your iron stores, head off hemorrhoids and much, much more.</p>
+    <p>Drink mostly water, milk, and fruit juice. Eat foods that have protein such as milk, cheese, yogurt, meat, fish and beans. Protein rich foods are important to help you recover from childbirth and keep your body strong. If you are under 18, or were underweight prior to pregnancy, you need to eat more protein.<b>Eat your fruits and vegetables</b>. Try to make half your plate fruits and vegetables. Fruits and vegetables have vitamins and minerals that keep you healthy. They also have fiber, which helps prevent constipation. Make sure to wash fruits and vegetables under running cold water before eating them.</p>
+    <p><b>Take prenatal vitamins</b>. If you are breastfeeding, it is a good idea to continue to take your prenatal vitamins. Your doctor can prescribe these pills so that your health insurance will cover a portion of the cost.
+
+       <b>Limit junk foods</b>. Soda pop, cookies, donuts, potato chips and french fries are okay sometimes, but don't let them take the place of healthy foods!</p>
+</div>
+<br>
+<br>
+
+<div class="container h-50 my-5" data-aos="fade-left">
+    <h1>Malnutrition</h1>
+    <img src="https://thedarjeelingchronicle.com/wp-content/uploads/2020/01/Malnutrition-in-India.jpg" width="1100" height="400">
+    <p>Eating inappropriate foods in your diet leads to malnutrition, which poses a serious risk to human health. Malnutrition, including being overweight and undernourished, is widespread in the modern world. <b>The WHO offers specialised guidance and recommendations </b> malnutrition to promote health and well-being.</p>
+    <p>A balanced diet should provide enough nutrients such as calories, protein and vitamins, to keep you healthy. Without this, you may not be getting all the nutrients you need and this can lead to malnutrition.</p>
+
+        <p><b>Malnutrition can result in unplanned weight loss</b>, a low body mass index (BMI) and vitamin and mineral deficiencies. This can leave you feeling tired, weak and affect your ability to recover from an illness.</p>
+            
+</div>
+
+
+
+
+<div class="footer">
+    <table>
+        <tr>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+            
+        </tr>
+        <tr>
+            <li>
+            <a href="">help</a>
+            </li>
+        </tr>
+        
+        <br>
+        <div class="container" style="background-color:rgb(233, 230, 221) ;">
+            <h3 style="font-family:'Times New Roman', Times, serif; text-align:center ;color:black;">Follow Us On </h3>
+        </div>
+        <p  class="social-links">
+            
+            <a href="#" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" width="30" height="30">
+             </a>
+             <a href="#" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/174/174857.png" width="30" height="30">
+             </a> 
+        </p> 
+    </table>
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <!-- our aos data -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+        });
+        </script>
+</body>
+</html>
